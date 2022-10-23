@@ -8,6 +8,7 @@ pipeline {
         stage('Build docker image') {
             steps {  
                 sh 'pwd'
+                sh 'ls -lrt'
                 sh 'sudo docker build -t amonkincloud/flaskapp:$BUILD_NUMBER .'
             }
         }
