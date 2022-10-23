@@ -7,7 +7,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'pwd;cd docker-job/ ; docker build -t amonkincloud/flaskapp:$BUILD_NUMBER .'
+                sh 'docker build -t amonkincloud/flaskapp:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
