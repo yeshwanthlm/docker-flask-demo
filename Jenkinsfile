@@ -4,11 +4,6 @@ pipeline {
     DOCKERHUB_CREDENTIALS = credentials('amonkincloud-dockerhub')
     }
     stages { 
-        stage('SCM Checkout') {
-            steps{
-            git 'https://github.com/yeshwanthlm/docker-flask-demo.git'
-            }
-        }
 
         stage('Build docker image') {
             steps {  
