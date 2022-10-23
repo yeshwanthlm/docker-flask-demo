@@ -7,9 +7,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'pwd'
-                sh 'ls -lrt'
-                sh 'cd /var/lib/jenkins/workspace/docker-job'; 'sudo docker build -t amonkincloud/flaskapp:$BUILD_NUMBER .'
+                sh 'pwd;cd docker-job/ ; docker build -t amonkincloud/flaskapp:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
