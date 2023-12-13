@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('git')
+    DOCKERHUB_CREDENTIALS = credentials('(flask)')
     }
     stages { 
 
