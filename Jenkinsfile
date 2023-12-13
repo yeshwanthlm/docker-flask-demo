@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('(fl;ask)')
+    DOCKERHUB_CREDENTIALS = credentials('git')
     }
     stages { 
 
