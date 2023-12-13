@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('fl;ask')
+    DOCKERHUB_CREDENTIALS = credentials('19331A0204/****** (fl;ask)')
     }
     stages { 
 
